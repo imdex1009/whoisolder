@@ -1,23 +1,21 @@
-import React from 'react'
-
-function Main() {
-
-
+import React from 'react';
+import Header from '../components/Header';
+import ButtonPlay from '../components/ButtonPlay';
 
 
-
+function Main({ header, setHeader }) {
   return (
-    <>
+    <section>
       <div>
-        <Header />
+        <Header header={header} setHeader={setHeader} />
       </div>
       <div>
-        {/* 이미지파일 */}
+
       </div>
       <div>
         <ButtonPlay />
       </div>
-   </>
+    </section>
   )
 }
 

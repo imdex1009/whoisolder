@@ -12,19 +12,19 @@ const dummydata = [
     },
     {
        id: 3,
-       name: 'Chris Hemsworth'
+       name: 'Chris Hemsworth',
        birth: 1983,
        image: 'chis.jpeg',
     },
     {
         id: 4,
-        name: 'Don Lee'
+        name: 'Don Lee',
         birth: 1971,
         image: 'Donlee.jpeg',
     },
     {
         id : 5,
-        name: 'Emilly Blunt'
+        name: 'Emilly Blunt',
         birth: 1983
         image: 'emilly.jpeg',
     },
