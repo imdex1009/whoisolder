@@ -1,29 +1,39 @@
-import logo from './logo.svg';
-import { useState, useEffect } from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
-import Main from './pages/Main';
-import Play from './pages/Play';
-import End from './pages/End';
+import { useState, useEffect } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import Play from "./pages/Play";
+import End from "./pages/End";
 
 function App() {
   const [header, setHeader] = useState(true);
-  const [result, setResult] = useState(true)
+  // header = whoisolder, result
+  const [result, setResult] = useState(true);
+  // result = great, cheerup
+  const [score, setScore] = useState(1);
 
   return (
     <Router>
       <Switch>
-        <Route path='/'>
-          <Main header={header} setHeader={setHeader} result={result} setResult={setResult}/>
+        <Route exact path="/">
+          <Main
+            header={header}
+            setHeader={setHeader}
+            result={result}
+            setResult={setResult}
+          />
         </Route>
-        <Route path='/play'>
-          <Play header={header} setHeader={setHeader} result={result} setResult={setResult}/>
+        <Route path="/play">
+          <Play
+            header={header}
+            setHeader={setHeader}
+            result={result}
+            setResult={setResult}
+            score={score}
+            setScore={setScore}
+          />
         </Route>
-        <Route path='/end'>
+        <Route path="/end">
           <End />
         </Route>
       </Switch>
