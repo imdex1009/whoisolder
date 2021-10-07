@@ -1,10 +1,10 @@
 import React from "react";
 import PeopleBirth from "./PeopleBirth";
 
-function People({ name, image, birth, header }) {
+function People({ name, image, birth, header, handlePeopleClick }) {
   return (
     <>
-      <img src={image} />
+      <img src={image} onClick={handlePeopleClick} />
       {header ? "" : <PeopleBirth birth={birth} />}
       <div>{name}</div>
     </>

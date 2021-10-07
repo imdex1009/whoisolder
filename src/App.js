@@ -10,7 +10,7 @@ function App() {
   // header = whoisolder, result
   const [result, setResult] = useState(true);
   // result = great, cheerup
-  const [score, setScore] = useState(1);
+  const [score, setScore] = useState(0);
 
   return (
     <Router>
