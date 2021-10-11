@@ -8,17 +8,18 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
   const [people, setPeople] = useState();
 
   useEffect(() => {
-    const randum = dummydata.slice(0, 2);
-    if (randum[0].birth < randum[1].birth) {
-      setPeople(randum[0]);
+    const random = dummydata.slice(0, 2);
+    if (random[0].birth < random[1].birth) {
+      setPeople(random[0]);
     } else {
-      setPeople(randum[1]);
+      setPeople(random[1]);
     }
   }, []);
 
   const handlePeopleClick = (data) => {
-    if (people === data) console.log(true);
-    else console.log(false);
+    setHeader(false);
+    if (people === data) setResult(true);
+    else setResult(false);
   };
 
   return (
