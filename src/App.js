@@ -11,6 +11,7 @@ function App() {
   const [result, setResult] = useState(true);
   // result = great, cheerup
   const [score, setScore] = useState(1);
+  // score
 
   return (
     <Router>
