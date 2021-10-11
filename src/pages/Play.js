@@ -10,14 +10,21 @@ const original = dummydata;
 function Play({ header, setHeader, result, setResult, score, setScore }) {
   // 데이터 보존 상태
   const [people, setPeople] = useState([]);
+  const [answer, setAnswer] = useState();
 
   useEffect(() => {
-    setPeople(getPeople(original));
+    const targets = getPeople(original);
+    if (targets[0].birth < targets[1].birth) {
+      setAnswer(targets[0]);
+    } else {
+      setAnswer(targets[1]);
+    }
+    setPeople(targets);
   }, []);
 
   const handlePeopleClick = (data) => {
     header ? setHeader(false) : setHeader(true);
-    if (people === data) setResult(true);
+    if (answer === data) setResult(true);
     else setResult(false);
   };
 
