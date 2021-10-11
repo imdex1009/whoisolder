@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ButtonPlay() {
+function Button() {
   return (
     <Link to="/play">
       <div className="button">Play</div>
@@ -9,4 +9,4 @@ function ButtonPlay() {
   );
 }
 
-export default ButtonPlay;
+export default Button;

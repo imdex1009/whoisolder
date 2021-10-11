@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import ButtonPlay from "../components/ButtonPlay";
+import Button from "../components/Button";
 
 function Main({ header, setHeader }) {
   return (
@@ -12,7 +12,7 @@ function Main({ header, setHeader }) {
         <img src="../../main.png" />
       </div>
       <div>
-        <ButtonPlay />
+        <Button />
       </div>
     </section>
   );

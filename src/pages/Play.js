@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Score from "../components/Score";
 import People from "../components/People";
 import dummydata from "../api/dummydata";
 
 function Play({ header, setHeader, result, setResult, score, setScore }) {
+  const [people, setPeople] = useState();
+
+  useEffect(() => {
+    const randum = dummydata.slice(0, 2);
+    if (randum[0].birth < randum[1].birth) {
+      setPeople(randum[0]);
+    } else {
+      setPeople(randum[1]);
+    }
+  }, []);
+
+  const handlePeopleClick = (data) => {
+    if (people === data) console.log(true);
+    else console.log(false);
+  };
+
   return (
     <>
       <div>
@@ -28,6 +44,9 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
               image={data.image}
               birth={data.birth}
               header={header}
+              handlePeopleClick={() => {
+                handlePeopleClick(data);
+              }}
             />
           );
         })}
