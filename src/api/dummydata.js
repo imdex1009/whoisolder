@@ -15,7 +15,7 @@ const dummydata = [
     id: 3,
     name: "Chris Hemsworth",
     birth: 1983,
-    image: "chis.jpeg",
+    image: "cris.jpeg",
   },
   {
     id: 4,
