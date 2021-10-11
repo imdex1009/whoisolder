@@ -3,21 +3,20 @@ import Header from "../components/Header";
 import Score from "../components/Score";
 import People from "../components/People";
 import dummydata from "../api/dummydata";
+import getPeople from "../api/randomApi";
+
+const original = dummydata;
 
 function Play({ header, setHeader, result, setResult, score, setScore }) {
-  const [people, setPeople] = useState();
+  // 데이터 보존 상태
+  const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    const random = dummydata.slice(0, 2);
-    if (random[0].birth < random[1].birth) {
-      setPeople(random[0]);
-    } else {
-      setPeople(random[1]);
-    }
+    setPeople(getPeople(original));
   }, []);
 
   const handlePeopleClick = (data) => {
-    setHeader(false);
+    header ? setHeader(false) : setHeader(true);
     if (people === data) setResult(true);
     else setResult(false);
   };
@@ -37,7 +36,7 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
       </div>
       <div>
         {/* 여기서 2개 반복문 */}
-        {dummydata.slice(0, 2).map((data) => {
+        {people.map((data) => {
           return (
             <People
               key={data.id}
