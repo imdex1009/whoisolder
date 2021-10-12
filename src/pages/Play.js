@@ -12,19 +12,45 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
   const [people, setPeople] = useState([]);
   const [answer, setAnswer] = useState();
 
+  // useEffect(() => {
+  //   const targets = getPeople(original);
+  //   if (targets[0].birth < targets[1].birth) {
+  //     setAnswer(targets[0]);
+  //   } else {
+  //     setAnswer(targets[1]);
+  //   }
+  //   setPeople(targets);
+  // }, []);
+
+
   useEffect(() => {
-    const targets = getPeople(original);
-    if (targets[0].birth < targets[1].birth) {
-      setAnswer(targets[0]);
+    if(score === 0) {
+      const targets = getPeople(original);
+      if (targets[0].birth < targets[1].birth) {
+        setAnswer(targets[0]);
+      } else {
+        setAnswer(targets[1]);
+      }
+      setPeople(targets);
     } else {
-      setAnswer(targets[1]);
-    }
-    setPeople(targets);
-  }, []);
+    setTimeout(function () {
+      const targets = getPeople(original);
+      if (targets[0].birth < targets[1].birth) {
+        setAnswer(targets[0]);
+      } else {
+        setAnswer(targets[1]);
+      }
+      setPeople(targets);
+    setHeader(true)
+    } , 3000)}
+  }, [score]);
+
 
   const handlePeopleClick = (data) => {
     header ? setHeader(false) : setHeader(true);
-    if (answer === data) setResult(true);
+    if (answer === data) {setResult(true);
+    setScore(score+1)
+    }
     else setResult(false);
   };
 
@@ -41,7 +67,7 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
       <div>
         <Score score={score} />
       </div>
-      <div>
+      <div className='people'>
         {/* 여기서 2개 반복문 */}
         {people.map((data) => {
           return (
