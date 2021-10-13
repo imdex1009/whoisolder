@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../components/Button";
 
-function End() {
+function End({ score }) {
   return (
     <>
       <div>YOUR SCORE IS</div>
-      <div>0</div>
+      <div>{ score }</div>
       <div>
         <Button />
       </div>

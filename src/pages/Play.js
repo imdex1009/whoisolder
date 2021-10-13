@@ -4,6 +4,7 @@ import Score from "../components/Score";
 import People from "../components/People";
 import dummydata from "../api/dummydata";
 import getPeople from "../api/randomApi";
+import { useHistory } from "react-router-dom";
 
 const original = dummydata;
 
@@ -11,6 +12,11 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
   // 데이터 보존 상태
   const [people, setPeople] = useState([]);
   const [answer, setAnswer] = useState();
+
+  let history = useHistory();
+  
+  //종료 여부 state 생성해서 End 연결 
+  //result false
 
   // useEffect(() => {
   //   const targets = getPeople(original);
@@ -24,16 +30,11 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
 
 
   useEffect(() => {
-    if(score === 0) {
-      const targets = getPeople(original);
-      if (targets[0].birth < targets[1].birth) {
-        setAnswer(targets[0]);
-      } else {
-        setAnswer(targets[1]);
-      }
-      setPeople(targets);
-    } else {
     setTimeout(function () {
+      if (result === false) {
+        history.push("/end");
+        setResult(true);
+      }
       const targets = getPeople(original);
       if (targets[0].birth < targets[1].birth) {
         setAnswer(targets[0]);
@@ -41,15 +42,17 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
         setAnswer(targets[1]);
       }
       setPeople(targets);
-    setHeader(true)
-    } , 3000)}
-  }, [score]);
+      setHeader(true);
+    
+    } , score === 0 ? 0 : 0)}
+  , [score]);
 
 
   const handlePeopleClick = (data) => {
     header ? setHeader(false) : setHeader(true);
-    if (answer === data) {setResult(true);
-    setScore(score+1)
+    if (answer === data) {
+      setResult(true);
+      setScore(score+1);
     }
     else setResult(false);
   };
@@ -89,3 +92,5 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
 }
 
 export default Play;
+
+
