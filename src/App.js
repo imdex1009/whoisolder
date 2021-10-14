@@ -12,8 +12,6 @@ function App() {
   // result = great, cheerup
   const [score, setScore] = useState(0);
 
-
-
   return (
     <Router>
       <Switch>
@@ -36,9 +34,7 @@ function App() {
           />
         </Route>
         <Route path="/end">
-          <End 
-            score={score}
-          />
+          <End score={score} setScore={setScore} />
         </Route>
       </Switch>
     </Router>

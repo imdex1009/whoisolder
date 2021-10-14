@@ -6,9 +6,13 @@ export default function getPeople(arr, min, max) {
   let result = [];
   for (let i = 0; i < 2; i++) {
     const idx = parseInt(Math.random() * (Number(max) - Number(min)));
-    result.push(arr[idx]);
-    arr.splice(idx, 1);
-    max = arr.length;
+    if (i > 0 && result[0].birth === arr[idx].birth) {
+      i--;
+    } else {
+      result.push(arr[idx]);
+      // arr.splice(idx, 1);
+      max = arr.length;
+    }
   }
   return result;
 }
