@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Button() {
+function Button({ handlePlayClick }) {
   return (
     <Link to="/play">
-      <div className="button">Play</div>
+      <div className="button" onClick={handlePlayClick}>
+        Play
+      </div>
     </Link>
   );
 }
