@@ -1,12 +1,16 @@
 import React from "react";
 import PeopleBirth from "./PeopleBirth";
+import "../pages/Play.css"
+
 
 function People({ name, image, birth, header, handlePeopleClick }) {
   return (
-    <div>
-      {header ? <img src={image} onClick={handlePeopleClick} /> : <img src={image} /> }
+    <div className="people-container">
+      {header 
+        ? <img className="people_image" src={image} onClick={handlePeopleClick} /> 
+        : <img className="people_image" src={image} /> }
       {header ? "" : <PeopleBirth birth={birth} />}
-      <div className='name'>{name}</div>
+      <div className="name">{name}</div>
     </div>
   );
 }
