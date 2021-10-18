@@ -4,7 +4,10 @@ function HeaderResult({result, setResult}) {
 
   return (
     <>
-    {result ? <div>GREAT! ^^</div> : <div>CHEER UP T.T</div>}
+    {result ?
+      <div className="great">GREAT! ^^</div> : 
+      <div className="cheer">CHEER UP T.T</div>
+    }
     </>
   )
 }

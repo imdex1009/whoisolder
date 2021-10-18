@@ -9,9 +9,9 @@ function Main({ header, setHeader }) {
         <Header header={header} setHeader={setHeader} />
       </div>
       <div>
-        <img src="../../main.png" />
+        <img className="img" src="../../main.png" />
       </div>
-      <div>
+      <div className="mainbutton">
         <Button />
       </div>
     </section>
