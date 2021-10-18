@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import Score from "../components/Score";
 
 function End({ score, setScore }) {
   const handlePlayClick = () => {
@@ -9,7 +10,7 @@ function End({ score, setScore }) {
   return (
     <>
       <div>YOUR SCORE IS</div>
-      <div>{score}</div>
+      <Score score={score} />
       <div>
         <Button handlePlayClick={() => handlePlayClick()} />
       </div>

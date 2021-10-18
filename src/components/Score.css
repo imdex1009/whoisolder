@@ -1,0 +1,8 @@
+.score {
+  display: flex;
+  justify-content: center;
+}
+
+.score span {
+  font-size: 100px;
+}
