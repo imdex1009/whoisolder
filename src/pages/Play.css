@@ -1,0 +1,23 @@
+.people-container {
+  position: relative;
+  display: inline-block;
+}
+
+.people {
+  display: flex;
+
+}
+
+.birth {
+  position: absolute;
+  text-align:center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2rem;
+}

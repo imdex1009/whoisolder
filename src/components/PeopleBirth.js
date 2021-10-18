@@ -1,9 +1,10 @@
 import React from "react";
+import "../pages/Play.css"
 
 function PeopleBirth({ birth }) {
   return (
     <>
-      <div>{birth}</div>
+      <div className="birth">{birth}</div>
     </>
   );
 }
