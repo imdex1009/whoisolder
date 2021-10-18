@@ -5,7 +5,7 @@ function Header({ header, setHeader, result, setResult }) {
   return (
     <>
       {header ? (
-        <div>WHO IS OLDER?</div>
+        <div className="header">WHO IS OLDER?</div>
       ) : (
         <HeaderResult result={result} setResult={setResult} />
       )}

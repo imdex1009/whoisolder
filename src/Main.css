@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.header {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+  }
+
+.great {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  color: green;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+}
+
+.cheer {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  color: rgb(208, 46, 100);
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+}
+
+.img {
+  position: relative;
+  top: 50px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  display: block; 
+  margin: 0px auto;
+}
+
+.mainbutton {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
