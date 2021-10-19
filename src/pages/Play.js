@@ -53,33 +53,34 @@ function Play({ header, setHeader, result, setResult, score, setScore }) {
 
   return (
     <>
-      <div>
-        <Header
-          header={header}
-          setHeader={setHeader}
-          result={result}
-          setResult={setResult}
-        />
-      </div>
-      <div>
-        <Score score={score} />
-      </div>
-      <div className="people">
-        {/* 여기서 2개 반복문 */}
-        {people.map((data) => {
-          return (
-            <People
-              key={data.id}
-              name={data.name}
-              image={data.image}
-              birth={data.birth}
-              header={header}
-              handlePeopleClick={() => {
-                handlePeopleClick(data);
-              }}
-            />
-          );
-        })}
+      <div className="play-page">
+        <div className="header-section">
+          <Header
+            header={header}
+            setHeader={setHeader}
+            result={result}
+            setResult={setResult}
+            score={score}
+          />
+        </div>
+        <div className="people">
+          {/* 여기서 2개 반복문 */}
+          {people.map((data) => {
+            return (
+              <People
+                key={data.id}
+                name={data.name}
+                image={data.image}
+                birth={data.birth}
+                header={header}
+                handlePeopleClick={() => {
+                  handlePeopleClick(data);
+                }}
+                answer={answer}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );

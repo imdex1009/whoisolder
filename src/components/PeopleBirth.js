@@ -1,10 +1,12 @@
 import React from "react";
-import "../pages/Play.css"
+import "../pages/Play.css";
 
-function PeopleBirth({ birth }) {
+function PeopleBirth({ birth, answer }) {
   return (
     <>
-      <div className="birth">{birth}</div>
+      <div className={answer.birth === birth ? "birth green" : "birth red"}>
+        <span>{birth}</span>
+      </div>
     </>
   );
 }

@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+* {
+  font-family: "Bangers", cursive;
 }
 
 .App-header {

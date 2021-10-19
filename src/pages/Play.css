@@ -1,3 +1,10 @@
+.play-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .people-container {
   position: relative;
   display: inline-block;
@@ -5,14 +12,31 @@
 
 .people {
   display: flex;
-
 }
 
 .birth {
   position: absolute;
-  text-align:center;
+  top: 23rem;
+  left: 11rem;
   font-weight: bold;
   font-size: 2rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 10rem;
+  height: 5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: rgb(208, 46, 100);
 }
 
 .name {
@@ -20,4 +44,27 @@
   font-weight: bold;
   font-size: 2rem;
   padding: 2rem;
+}
+
+.header-component {
+  background-color: yellow;
+  flex: 1 0 0;
+}
+
+.header-section {
+  width: 80vw;
+}
+
+.headerContainer {
+  display: flex;
+  padding-left: 10vw;
+}
+
+.header-part {
+  flex: 1 0 0;
+}
+
+.scorePlay {
+  font-size: 3rem;
+  width: 130px;
 }
