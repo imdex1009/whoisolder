@@ -6,7 +6,7 @@ import dummydata from "../api/dummydata";
 import getPeople from "../api/randomApi";
 import { useHistory } from "react-router-dom";
 
-const original = dummydata.slice(0, 3);
+const original = dummydata.slice();
 
 function Play({ header, setHeader, result, setResult, score, setScore }) {
   // 데이터 보존 상태

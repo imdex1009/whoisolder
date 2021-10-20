@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import "./Main.css";
+import "./pages/Main.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import Play from "./pages/Play";

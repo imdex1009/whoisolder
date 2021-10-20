@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function HeaderResult({result, setResult}) {
-
+function HeaderResult({ result, setResult }) {
   return (
     <>
-    {result ?
-      <div className="great">GREAT! ^^</div> : 
-      <div className="cheer">CHEER UP T.T</div>
-    }
+      {result ? (
+        <div className="header great">GREAT! ^^</div>
+      ) : (
+        <div className="header cheer">CHEER UP T.T</div>
+      )}
     </>
-  )
+  );
 }
 
 export default HeaderResult;

@@ -5,8 +5,8 @@ import Button from "../components/Button";
 function Main({ header, setHeader }) {
   return (
     <section>
-      <div>
-        <Header header={header} setHeader={setHeader} />
+      <div className="header">
+        <span>WHO IS OLDER?</span>
       </div>
       <div>
         <img className="img" src="../../main.png" />

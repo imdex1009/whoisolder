@@ -42,7 +42,7 @@
 .name {
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 2rem;
 }
 
@@ -52,12 +52,15 @@
 }
 
 .header-section {
-  width: 80vw;
+  width: 1000px;
+  /* border: 1px solid black; */
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .headerContainer {
   display: flex;
-  padding-left: 10vw;
+  padding-left: 200px;
 }
 
 .header-part {
@@ -66,5 +69,9 @@
 
 .scorePlay {
   font-size: 3rem;
-  width: 130px;
+  width: 200px;
+}
+
+.people_image {
+  padding: 10px;
 }
