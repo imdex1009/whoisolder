@@ -5,7 +5,9 @@ function PeopleBirth({ birth, answer }) {
   return (
     <>
       <div className={answer.birth === birth ? "birth green" : "birth red"}>
-        <span>{birth}</span>
+        <span className={answer.birth === birth ? "green" : "red"}>
+          {birth}
+        </span>
       </div>
     </>
   );

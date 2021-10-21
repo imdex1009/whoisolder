@@ -21,5 +21,6 @@
 }
 
 .button span {
+  background-color: orange;
   color: black;
 }
