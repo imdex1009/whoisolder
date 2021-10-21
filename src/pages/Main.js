@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
 import Button from "../components/Button";
 
-function Main({ header, setHeader }) {
+function Main( ) {
   return (
     <section>
       <div className="header">

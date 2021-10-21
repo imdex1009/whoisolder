@@ -15,7 +15,7 @@ const dummydata = [
     id: 3,
     name: "Chris Hemsworth",
     birth: 1983,
-    image: "cris.jpeg",
+    image: "chris.jpeg",
   },
   {
     id: 4,
@@ -42,20 +42,14 @@ const dummydata = [
     image: "IU.jpeg",
   },
   {
-    id: 8,
-    name: "KIM SUN HO",
-    birth: 1986,
-    image: "KimSunHo.jpeg",
-  },
-  {
     id: 9,
-    name: "Blake Lively",
+    name: "BLAKE LIVELY",
     birth: 1987,
     image: "BlakeLively.jpeg",
   },
   {
     id: 10,
-    name: "Ryan Reynolds",
+    name: "RYAN REYNOLDS",
     birth: 1976,
     image: "RyanReynolds.jpeg",
   },

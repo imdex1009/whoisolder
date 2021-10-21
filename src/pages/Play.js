@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
-import Score from "../components/Score";
 import People from "../components/People";
 import dummydata from "../api/dummydata";
 import getPeople from "../api/randomApi";
