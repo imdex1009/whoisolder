@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import "./pages/Main.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -17,12 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Main
-            header={header}
-            setHeader={setHeader}
-            result={result}
-            setResult={setResult}
-          />
+          <Main/>
         </Route>
         <Route path="/play">
           <Play
