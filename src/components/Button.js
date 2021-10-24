@@ -4,13 +4,13 @@ import "./Button.css";
 
 function Button({ handlePlayClick }) {
   return (
-    <Link to="/play" className="button-Link">
-      <div className="button-container">
+    <div className="button-container">
+      <Link to="/play" className="button-Link">
         <div className="button" onClick={handlePlayClick}>
           <span>Play</span>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
 

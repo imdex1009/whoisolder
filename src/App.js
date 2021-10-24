@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Main/>
+          <Main />
         </Route>
         <Route path="/play">
           <Play
