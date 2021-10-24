@@ -170,7 +170,7 @@ const dummydata = [
   {
     id: 30,
     name: "Tom Hiddleston",
-    birth: 19,
+    birth: 1981,
     image: "Tom Hiddleston.jpeg",
   },
   {
