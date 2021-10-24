@@ -53,6 +53,67 @@ const dummydata = [
     birth: 1976,
     image: "RyanReynolds.jpeg",
   },
+
+  {
+    id: 31,
+    name: "Arin",
+    birth: 1999,
+    image: "Arin.jpeg",
+  },
+  {
+    id: 32,
+    name: "Son Ye-jin",
+    birth: 1982,
+    image: "Son-Yejin.jpg",
+  },
+  {
+    id: 33,
+    name: "Shin Ye-eun",
+    birth: 1998,
+    image: "Shin-Ye-eun.jpg",
+  },
+  {
+    id: 34,
+    name: "Bae Yoon-kyung",
+    birth: 1993,
+    image: "Bae Yoon-kyung.jpeg",
+  },
+  {
+    id: 35,
+    name: "Eva Green",
+    birth: 1980,
+    image: "Eva Green.jpeg",
+  },
+  {
+    id: 36,
+    name: "Jung Hae-in",
+    birth: 1988,
+    image: "Jung Hae-in.jpg",
+  },
+  {
+    id: 37,
+    name: "Gong Yoo",
+    birth: 1979,
+    image: "Gong Yoo.jpg",
+  },
+  {
+    id: 38,
+    name: "Cillian Murphy",
+    birth: 1976,
+    image: "Cillian Murphy.png",
+  },
+  {
+    id: 39,
+    name: "Dane DeHaan",
+    birth: 1986,
+    image: "Dane DeHaan.jpeg",
+  },
+  {
+    id: 40,
+    name: "Satomi Ishihara",
+    birth: 1986,
+    image: "Satomi Ishihara.jpg",
+  },
 ];
 
 export default dummydata;
