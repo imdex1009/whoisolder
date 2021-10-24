@@ -5,9 +5,9 @@ import "./Button.css";
 function Button({ handlePlayClick }) {
   return (
     <div className="button-container">
-      <Link to="/play" className="button-Link">
+      <Link to="/" className="button-Link">
         <div className="button" onClick={handlePlayClick}>
-          <span>Play</span>
+          <span>Main</span>
         </div>
       </Link>
     </div>
