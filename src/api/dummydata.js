@@ -114,6 +114,66 @@ const dummydata = [
     image: "Tom Cruise.jpeg"
   },
   {
+    id: 21,
+    name: "Kim Dae-myung",
+    birth: 1981,
+    image: "Kim Dae-myung.jpg",
+  },
+  {
+    id: 22,
+    name: "Kim Min-Kyoung",
+    birth: 1981,
+    image: "Kim Min-Kyoung.jpeg",
+  },
+  {
+    id: 23,
+    name: "Park Hae-soo",
+    birth: 1981,
+    image: "Park Hae-soo.jpeg",
+  },
+  {
+    id: 24,
+    name: "Benedict Cumberbatch",
+    birth: 1976,
+    image: "Benedict Cumberbatch.jpeg",
+  },
+  {
+    id: 25,
+    name: "Wentworth Miller",
+    birth: 1972,
+    image: "Wentworth Miller.jpeg",
+  },
+  {
+    id: 26,
+    name: "Yang Se-chan",
+    birth: 1986,
+    image: "Yang Se-chan.jpeg",
+  },
+  {
+    id: 27,
+    name: "Lim Young-woong",
+    birth: 1991,
+    image: "Lim Young-woong.jpg",
+  },
+  {
+    id: 28,
+    name: "Jo Byeong-kyu",
+    birth: 1996,
+    image: "Jo Byeong-kyu.jpeg",
+  },
+  {
+    id: 29,
+    name: "Tom Holland",
+    birth: 1996,
+    image: "Tom Holland.jpeg",
+  },
+  {
+    id: 30,
+    name: "Tom Hiddleston",
+    birth: 19,
+    image: "Tom Hiddleston.jpeg",
+  },
+  {
     id: 31,
     name: "Arin",
     birth: 1999,
