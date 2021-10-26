@@ -7,11 +7,11 @@ import Play from "./pages/Play";
 import End from "./pages/End";
 
 function App() {
-  const [header, setHeader] = useState(true);
-  // header = whoisolder, result
-  const [result, setResult] = useState(true);
-  // result = great, cheerup
-  const [score, setScore] = useState(0);
+  // const [header, setHeader] = useState(true);
+  // // header = whoisolder, result
+  // const [result, setResult] = useState(true);
+  // // result = great, cheerup
+  // const [score, setScore] = useState(0);
 
   return (
     <Router>
@@ -21,16 +21,18 @@ function App() {
         </Route>
         <Route path="/play">
           <Play
-            header={header}
-            setHeader={setHeader}
-            result={result}
-            setResult={setResult}
-            score={score}
-            setScore={setScore}
+            // header={header}
+            // setHeader={setHeader}
+            // result={result}
+            // setResult={setResult}
+            // score={score}
+            // setScore={setScore}
           />
         </Route>
         <Route path="/end">
-          <End score={score} setScore={setScore} />
+          <End 
+          // score={score} setScore={setScore} 
+          />
         </Route>
       </Switch>
     </Router>
