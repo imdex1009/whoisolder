@@ -2,12 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Button from "../components/Button";
 
-
 function Main() {
-  const state = useSelector(state => state.auxReducer);
-  const {header} = state;
-  console.log(state)
-  
+  const state = useSelector((state) => state.auxReducer);
+  const { header } = state;
+  console.log(state);
+
   return (
     <section>
       <div className="header">
