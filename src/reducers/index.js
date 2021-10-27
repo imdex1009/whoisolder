@@ -1,14 +1,8 @@
-import { SWITCH_HEADER } from "../actions";
-import  initialState  from "./initialState";
+import { combineReducers } from 'redux';
+import auxReducer from './auxReducer';
 
-const auxReducer = (state = initialState, action) => {
- 
-    switch (action.type) {
-      case SWITCH_HEADER:
-          return
-      default:
-      return state;
-    }
-}
+const rootReducer = combineReducers({
+  auxReducer
+});
 
-export default auxReducer
+export default rootReducer;
