@@ -5,7 +5,6 @@ import Button from "../components/Button";
 function Main() {
   const state = useSelector((state) => state.auxReducer);
   const { header } = state;
-  console.log(state);
 
   return (
     <section>
