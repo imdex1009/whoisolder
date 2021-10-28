@@ -1,71 +1,80 @@
-# Getting Started with Create React App
+# Read Me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🙋‍♀️ 개발배경
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+빈칸 채워넣기 형식인 부트캠프 과제에 대해 아쉬움을 느꼈던 수강생들이 모여 직접 바닥부터 만들었습니다.
+인물 사진만 보고 누가 더 나이가 많은지 맞추는 게임입니다.
 
-### `npm start`
+처음 시작한 프로젝트로 일반적인 웹사이트가 아닌 게임을 선택한 이유는  
+기본적인 HTML, CSS, React에 더해  
+다른 웹사이트와 달리 다양한 알고리즘도 사용할 수 있기 때문입니다.
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🎮 게임 진행
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+![gameGif](public/readme/WhoIsOlder_GamePlaying2.gif)
+![gameflow](./public/readme/whoisolder_flow_chart.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
+<br>
 
-### `npm run build`
+## 🧑‍💻 게임 실행 방법
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. 파일을 다운
+2. 해당 폴더 터미널에서 npm install 입력
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+$ npm install
+```
 
-### `npm run eject`
+3. npm start를 입력하면 게임 실행
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```shell
+$ npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🤼‍♀️ 참여멤버
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-dfsdd
+<table>
+    <tr>
+        <td align="center" width="130px" height="160px">
+            <img height="100px" width="100px" src="public/readme/profile.png" />
+            <br>
+            <a href='https://github.com/imdex1009'>rec.fffixing</a>
+        </td>
+       <td align="center" width="130px" height="160px">
+            <img height="100px" width="100px" src="public/readme/heokiro.png" />
+            <br>
+            <a href='https://github.com/heokiro'>heokiro</a>
+        </td>
+        <td align="center" width="130px" height="160px">
+            <img height="100px" width="100px" src="public/readme/CookieMonster.jpeg" />
+            <br>
+            <a href='https://github.com/cherishxyun'>cherishxyun</a>
+        </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <span></span>
+        <a href='https://coding-bot.tistory.com/'>Blog</a>
+       </td>
+      <td align="center">
+        <a href='https://heokiro.tistory.com/'>Blog</a>
+      </td>
+      <td align="center">
+        <a href='https://high-developer.tistory.com/'>Blog</a>
+        </td>
+    </tr>
+</table>
