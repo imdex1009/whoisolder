@@ -2,8 +2,6 @@
 
 ## 🙋‍♀️ 개발배경
 
----
-
 Section2까지의 내용을 복습을 위해 매일 새벽 6시 부터 8시까지 진행한 새벽 스터디 프로젝트!  
 whoisolder는 인물 사진만 보고 누가 더 나이가 많은지 맞추는 게임입니다.
 
@@ -15,8 +13,6 @@ whoisolder는 인물 사진만 보고 누가 더 나이가 많은지 맞추는 �
 
 ## 🎮 게임 진행
 
----
-
 ![gameGif](public/readme/WhoIsOlder_GamePlaying2.gif)
 ![gameflow](./public/readme/whoisolder_flow_chart.png)
 
@@ -24,8 +20,6 @@ whoisolder는 인물 사진만 보고 누가 더 나이가 많은지 맞추는 �
 <br>
 
 ## 🧑‍💻 게임 실행 방법
-
----
 
 1. 파일을 다운
 2. 해당 폴더 터미널에서 npm install 입력
@@ -44,8 +38,6 @@ $ npm start
 <br>
 
 ## 🤼‍♀️ 참여멤버
-
----
 
 <table>
     <tr>
